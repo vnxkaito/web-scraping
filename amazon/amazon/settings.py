@@ -1,4 +1,4 @@
-# Scrapy settings for tinydeal project
+# Scrapy settings for amazon project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'tinydeal'
+BOT_NAME = 'amazon'
 
-SPIDER_MODULES = ['tinydeal.spiders']
-NEWSPIDER_MODULE = 'tinydeal.spiders'
+SPIDER_MODULES = ['amazon.spiders']
+NEWSPIDER_MODULE = 'amazon.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'tinydeal (+http://www.yourdomain.com)'
+#USER_AGENT = 'amazon (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'tinydeal.middlewares.TinydealSpiderMiddleware': 543,
+#    'amazon.middlewares.AmazonSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'tinydeal.middlewares.TinydealDownloaderMiddleware': 543,
+#    'amazon.middlewares.AmazonDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'tinydeal.pipelines.TinydealPipeline': 300,
+#    'amazon.pipelines.AmazonPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -86,5 +86,3 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-FEED_EXPORT_ENCODING = 'utf-8'
